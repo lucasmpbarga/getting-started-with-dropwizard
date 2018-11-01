@@ -5,6 +5,8 @@
  */
 package com.mycompany.dropbookmarks;
 
+import io.dropwizard.Application;
+import io.dropwizard.testing.ResourceHelpers;
 import io.dropwizard.testing.junit.DropwizardAppRule;
 import javax.net.ssl.SSLContext;
 import org.junit.ClassRule;
@@ -17,14 +19,13 @@ import org.glassfish.jersey.client.authentication.HttpAuthenticationFeature;
 import org.junit.After;
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
-/**
- *
- * @author computer
- */
+
 public class AuthIntegrationTest {
     private static final String CONFIG_PATH
-            = "config.yml";
+            = ResourceHelpers.resourceFilePath("test-config.yml");
     
     @ClassRule
     public static final DropwizardAppRule<dropbookmarksConfiguration> RULE
@@ -51,6 +52,13 @@ public class AuthIntegrationTest {
     
     
     private Client client;
+    
+    @BeforeClass
+    public static void setUpClass() throws Exception{
+        Application<dropbookmarksConfiguration> appplication
+                = RULE.getApplication();
+        appplication.run("db", "migrate", "-i DEV", CONFIG_PATH);
+    }
     
 //    @Before
 //    public void setUp(){
@@ -87,6 +95,7 @@ public class AuthIntegrationTest {
     }
 
     @Test
+    @Ignore
     public void testHappyPath(){
        String expected = "hello secured world";
        client.register(FEATURE);

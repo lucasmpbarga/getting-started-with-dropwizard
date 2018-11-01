@@ -126,6 +126,10 @@
       <scope>test</scope>
       <exclusions>
         <exclusion>
+          <artifactId>asm-debug-all</artifactId>
+          <groupId>org.ow2.asm</groupId>
+        </exclusion>
+        <exclusion>
           <artifactId>junit</artifactId>
           <groupId>junit</groupId>
         </exclusion>
@@ -162,6 +166,10 @@
           <groupId>javax.servlet</groupId>
         </exclusion>
         <exclusion>
+          <artifactId>asm-debug-all</artifactId>
+          <groupId>org.ow2.asm</groupId>
+        </exclusion>
+        <exclusion>
           <artifactId>jersey-test-framework-core</artifactId>
           <groupId>org.glassfish.jersey.test-framework</groupId>
         </exclusion>
@@ -173,11 +181,13 @@
           <artifactId>jersey-container-grizzly2-servlet</artifactId>
           <groupId>org.glassfish.jersey.containers</groupId>
         </exclusion>
-        <exclusion>
-          <artifactId>asm-debug-all</artifactId>
-          <groupId>org.ow2.asm</groupId>
-        </exclusion>
       </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>1.4.190</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
   <properties>

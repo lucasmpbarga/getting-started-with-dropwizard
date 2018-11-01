@@ -1,4 +1,5 @@
 com.mycompany.dropbookmarks
-com.mycompany.dropbooks.auth
-com.mycompany.dropbooks.core
-com.mycompany.dropbooks.resources
+com.mycompany.dropbookmarks.auth
+com.mycompany.dropbookmarks.core
+com.mycompany.dropbookmarks.db
+com.mycompany.dropbookmarks.resources

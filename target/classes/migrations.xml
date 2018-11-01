@@ -49,7 +49,7 @@
     <changeSet id="3" author="dima">
         <insert tableName="users">
             <column name="id" value="1"/>
-            <column name="username" value="udemy"/>
+            <column name="username" value="username"/>
             <column name="password" value="password"/>
         </insert>
         <rollback>
