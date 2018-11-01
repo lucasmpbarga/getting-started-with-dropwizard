@@ -1,7 +1,8 @@
 package com.mycompany.dropbooks.resources;
 
 import com.google.common.base.Optional;
-import com.mycompany.dropbooks.core.User;
+import com.mycompany.dropbookmarks.core.User;
+import com.mycompany.dropbookmarks.resources.HelloResource;
 import io.dropwizard.auth.AuthFactory;
 import io.dropwizard.auth.AuthenticationException;
 import io.dropwizard.auth.Authenticator;

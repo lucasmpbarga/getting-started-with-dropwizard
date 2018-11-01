@@ -1,7 +1,7 @@
-package com.mycompany.dropbooks.auth;
+package com.mycompany.dropbookmarks.auth;
 
 import com.google.common.base.Optional;
-import com.mycompany.dropbooks.core.User;
+import com.mycompany.dropbookmarks.core.User;
 import io.dropwizard.auth.AuthenticationException;
 import io.dropwizard.auth.Authenticator;
 import io.dropwizard.auth.basic.BasicCredentials;
