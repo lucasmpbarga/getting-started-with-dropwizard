@@ -95,7 +95,6 @@ public class AuthIntegrationTest {
     }
 
     @Test
-    @Ignore
     public void testHappyPath(){
        String expected = "hello secured world";
        client.register(FEATURE);

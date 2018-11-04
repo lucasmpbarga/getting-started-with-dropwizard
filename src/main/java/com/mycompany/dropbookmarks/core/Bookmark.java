@@ -2,6 +2,7 @@
 package com.mycompany.dropbookmarks.core;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import io.dropwizard.jersey.params.LongParam;
 import java.util.Objects;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

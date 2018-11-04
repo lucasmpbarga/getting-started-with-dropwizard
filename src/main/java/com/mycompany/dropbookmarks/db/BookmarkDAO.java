@@ -4,6 +4,7 @@ import com.google.common.base.Optional;
 import com.mycompany.dropbookmarks.core.Bookmark;
 import io.dropwizard.hibernate.AbstractDAO;
 import java.util.List;
+import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 
 /**
@@ -47,7 +48,11 @@ public class BookmarkDAO extends AbstractDAO<Bookmark> {
      * @return the saved bookmark with all auto-generated fields filled.
      */
     public Bookmark save(Bookmark bookmark) {
-        return persist(bookmark);
+        try{
+             return persist(bookmark);
+        }catch(HibernateException e){
+            return  null;
+        }       
     }
 
     /**
