@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="com.mycompany.dropbookmarks.AuthIntegrationTest" time="11.487" errors="0" skipped="1">
+<testsuite tests="2" failures="0" name="com.mycompany.dropbookmarks.AuthIntegrationTest" time="4.39" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -43,7 +43,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/home/computer/netbeans-8.2/java/maven-nblib/netbeans-eventspy.jar test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/home/computer/netbeans-8.2/java/maven-nblib/netbeans-eventspy.jar install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="user.language.format" value="pt"/>
@@ -62,8 +62,6 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.mycompany.dropbookmarks.AuthIntegrationTest" name="testHappyPath" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="com.mycompany.dropbookmarks.AuthIntegrationTest" name="testSadPath" time="0.709"/>
+  <testcase classname="com.mycompany.dropbookmarks.AuthIntegrationTest" name="testHappyPath" time="0.377"/>
+  <testcase classname="com.mycompany.dropbookmarks.AuthIntegrationTest" name="testSadPath" time="0.071"/>
 </testsuite>

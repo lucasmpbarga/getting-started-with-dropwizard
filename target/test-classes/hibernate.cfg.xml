@@ -29,7 +29,7 @@
         <property name="show_sql">true</property>
 
         <mapping class="com.mycompany.dropbookmarks.core.User"/>
-        <!--<mapping class="com.udemy.dropbookmarks.core.Bookmark"/>-->
+        <mapping class="com.mycompany.dropbookmarks.core.Bookmark"/>
 
     </session-factory>
 
